@@ -1,45 +1,45 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <style>body{background: url("Assets/Back_Grounds/9.gif")};</style>
+    <style>body{background: url("../Assets/Back_Grounds/c.gif")};</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="..\styles.css">
   </head>
   <body>
     <div class="navigation">
       <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="Assets\logo.jpg" alt="Weather logo" width="50" height="44" class="d-inline-block align-top logo"/>
-            Home</a>
+            <img src="..\Assets\cloudy.png" alt="Weather logo" width="50" height="44" class="d-inline-block align-top logo"/>
+            Cloudiness</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Plots
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Visualisations/temperature.html">Max Temperature</a>
-                  <li><a class="dropdown-item" href="Visualisations/humidity.html">Humidity</a>
-                  <li><a class="dropdown-item" href="Visualisations/cloudiness.html">Cloudiness</a>
-                  <li><a class="dropdown-item" href="Visualisations/wind.html">Wind Speed</a>
+                  <li><a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <li><a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <li><a class="dropdown-item" href="wind.html">Wind Speed</a>
                 </ul>
               <li class="nav-item">
-                <a class="nav-link" href="Visualisations/comparison.html">Compare</a>
+                <a class="nav-link" href="comparison.html">Compare</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Visualisations/data.html">Data</a>
+                <a class="nav-link" href="data.html">Data</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://github.com/mmparvez/Web-Design-Challenge">REPO</a>
@@ -54,19 +54,11 @@
       <div class="row g-0">
         <div class="col-lg-8 col-md-6">
           <div class="box" style="padding-bottom: 10px;">
-            <h2 class="title">Summary: Weather Plots <br> (Lattitude vs. X)</h2>
+            <h2 class="title">Lattitude<br>vs.<br>Cloudiness</h2>
             <hr>
-            <img src="Assets\Plots\Fig1.png" class="vizualization rounded  mx-auto d-block fig" alt="Max Temperature Graph">
-            <p>The purpose of this project was to analyze how weather across 500+ cities across the world
-            changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was
-            utilized to assemble the dataset to create a representative model of weather across world cities.</p>
-          
-            <p> Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
-            of weather vs. latitude. Relationships analyzed included: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude,
-            Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
-
-            <p> Data and visualizations are are provided as part of the analysis, including explanations and descriptions
-            of trends and correlations.</p>
+            <img src="..\Assets\Plots\Fig3.png" class="vizualization rounded  mx-auto d-block fig" alt="Max Temperature Graph">
+            <p>There seems to be no relationship between latitude and cloudiness. A variety of measurements of cloudiness can be found
+              regardless of latitude.<br><br><br></p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -77,27 +69,27 @@
               <div class="row" style="padding-bottom: 40px;">
                 <div class="col-6">
                   <div class="dd_text">Latitude<br>vs.<br>Max Temperature</div>
-                  <a href="Visualisations/temperature.html">
-                  <img class="panel fig rounded mx-auto d-block" src="Assets\Plots\Fig1.png" alt="Max Temperature Graph">
+                  <a href="temperature.html">
+                  <img class="panel fig rounded mx-auto d-block" src="..\Assets\Plots\Fig1.png" alt="Max Temperature Graph">
                   </a>
                 </div>
                 <div class="col-6">
                   <div class="dd_text">Latitude<br>vs.<br>Humidity</div>
-                  <a href="Visualisations/humidity.html">
-                    <img class="panel fig rounded mx-auto d-block" src="Assets\Plots\Fig2.png" alt="Humidity Graph">
+                  <a href="humidity.html">
+                    <img class="panel fig rounded mx-auto d-block" src="..\Assets\Plots\Fig2.png" alt="Humidity Graph">
                   </a>
                 </div>
               <!-- <div class="row" style="padding-bottom: 40px;"> -->
                 <div class="col-6">
                   <div class="dd_text">Latitude<br>vs.<br>Cloudiness</div>
-                  <a href="Visualisations/cloudiness.html">
-                    <img class="panel fig rounded mx-auto d-block" src="Assets\Plots\Fig3.png" alt="Cloudiness Graph">
+                  <a href="cloudiness.html">
+                    <img class="panel fig rounded mx-auto d-block" src="..\Assets\Plots\Fig3.png" alt="Cloudiness Graph">
                   </a>
                 </div>
                 <div class="col-6">
                   <div class="dd_text">Latitude<br>vs.<br>Wind Speed</div>
-                  <a href="Visualisations/wind.html">
-                    <img class="panel fig rounded mx-auto d-block" src="Assets\Plots\Fig4.png" alt="Wind Speed Graph">
+                  <a href="wind.html">
+                    <img class="panel fig rounded mx-auto d-block" src="..\Assets\Plots\Fig4.png" alt="Wind Speed Graph">
                   </a>
                 </div>
                 </div>
